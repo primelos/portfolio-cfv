@@ -50,7 +50,7 @@ const Projects = () => {
             />
           </a>
           <div className="click-icon">
-            <a href="https://github.com/primelos/SprintChallenge2-Single-Page-Apps/tree/carlos-venegas">
+            <a href="https://sprint-challenge2-single-page-apps-p8y0hjo9u.now.sh/">
               <i className="fas fa-laptop"></i>
             </a>
             <a href="https://github.com/primelos/SprintChallenge2-Single-Page-Apps/tree/carlos-venegas">
