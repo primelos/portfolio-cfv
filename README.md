@@ -1,4 +1,15 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CFV Portfolio 2020
+
+## Stack
+
+* React
+* React Router
+
+## Project Management
+
+* Follow the [Trello Board](https://trello.com/b/pBtifZzo/carlos-venegas-portfolio)
+
+
 
 ## Available Scripts
 
