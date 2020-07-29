@@ -7,7 +7,7 @@ const Icons = () => {
       <div className="awesome-icon">
         <div className="">
           <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">
-            <i class="fab fa-html5"></i>
+            <i className="fab fa-html5"></i>
           </a>
           <p>HTML5</p>
         </div>
@@ -20,25 +20,25 @@ const Icons = () => {
       </div>
       <div className="awesome-icon">
         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
-          <i class="fab fa-js"></i>
+          <i className="fab fa-js"></i>
         </a>
         <p>Javascript</p>
       </div>
       <div className="awesome-icon">
         <a href="http://lesscss.org/">
-          <i class="fab fa-less"></i>
+          <i className="fab fa-less"></i>
         </a>
         <p>Less</p>
       </div>
       <div className="awesome-icon">
         <a href="https://classic.yarnpkg.com/en/">
-          <i class="fab fa-yarn"></i>
+          <i className="fab fa-yarn"></i>
         </a>
         <p>Yarn</p>
       </div>
       <div className="awesome-icon">
         <a href="https://reactjs.org/">
-          <i class="fab fa-react"></i>
+          <i className="fab fa-react"></i>
         </a>
         <p>React</p>
       </div>
@@ -52,19 +52,19 @@ const Icons = () => {
       </div>
       <div className="awesome-icon">
         <a href="https://github.com/">
-          <i class="fab fa-github"></i>
+          <i className="fab fa-github"></i>
         </a>
         <p>Github</p>
       </div>
       <div className="awesome-icon">
         <a href="https://nodejs.org/en/">
-          <i class="fab fa-node-js"></i>
+          <i className="fab fa-node-js"></i>
         </a>
         <p>Node.js</p>
       </div>
       <div className="awesome-icon">
         <a href="https://www.npmjs.com/">
-          <i class="fab fa-npm"></i>
+          <i className="fab fa-npm"></i>
         </a>
         <p>npm</p>
       </div>

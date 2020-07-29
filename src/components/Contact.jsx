@@ -1,36 +1,34 @@
-import React from 'react';
+import React from "react";
+import Navs from './Navs'
 
-const Contact = () => {
-    
-    return (
-        <div className='form-section' >
-            <h2>Professional Inquires</h2>
-            <form className='form-input'>
-                Name:
-                <input 
-                type="text"
-                placeholder='name'
-                name='name'/>
-                <br/>
-                Email
-                <input 
-                type="text"
-                name='email'
-                />
-                <br/>
-                Subject
-                <input 
-                type="text"
-                name='subject'
-                />
-                <br/>
-                <textarea>
 
-                </textarea>
 
-            </form>
-
-        </div>
-    )
-}
+const Contact = (props) => {
+  console.log(props);
+  return (
+      <>
+    <Navs props={props}/>
+    <div className="form-section">
+      <h2>Professional Inquires</h2>
+      <form
+        className="form-input"
+        action="https://formspree.io/xnqglenb"
+        method="POST"
+      >
+        <label htmlFor="name">Name</label>
+        <input type="text" placeholder="Ex. John Doe" name="name" />
+        <br />
+        <label htmlFor="email">Email</label>
+        <input type="text" name="email" />
+        <br />
+        <label htmlFor="subject">Subject</label>
+        <input type="text" name="subject" />
+        <br />
+        <label htmlFor="message" >Message</label>
+        <textarea rows='12'></textarea>
+      </form>
+    </div>
+    </>
+  );
+};
 export default Contact;

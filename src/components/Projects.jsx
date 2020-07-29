@@ -26,17 +26,17 @@ const Projects = () => {
         <div className="project-card">
           <h2>Sanctions Explorer</h2>
 
-          <a href="https://sanctionsexplorer2020.netlify.com/">
+          
             <img
               className="img2"
               src={require("../images/SE.png")}
               alt="sanctions"
             />
-          </a>
+          
           <div className="click-icon">
-            <i class="fab fa-expeditedssl"></i>
+            <i className="fab fa-expeditedssl"></i>
 
-            <i class="fab fa-expeditedssl"></i>
+            <i className="fab fa-expeditedssl"></i>
           </div>
         </div>
 
@@ -54,7 +54,7 @@ const Projects = () => {
               <i className="fas fa-laptop"></i>
             </a>
             <a href="https://github.com/primelos/SprintChallenge2-Single-Page-Apps/tree/carlos-venegas">
-              <i class="fas fa-laptop-code"></i>
+              <i className="fas fa-laptop-code"></i>
             </a>
           </div>
         </div>

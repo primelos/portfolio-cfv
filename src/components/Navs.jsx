@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Navs = (props) => {
-  console.log()
+  console.log(props)
   return (
     <div className="nav-body">
       <div>
@@ -18,8 +18,17 @@ const Navs = (props) => {
       </div>
       <div>
         <nav>
-         
-            <a href='#projects-link'>Projects</a>
+          {console.log(`test`, props)}
+          
+         {/* { */}
+         {/* props.location.pathname === '/' ? (
+           <a href="#featured-work">Projects</a>
+         ) : ( */}
+           <Link exact to='/'>
+           Projects
+           </Link>
+          {/* )} */}
+            {/* < Link to="/#projects-link">Projects</ Link> */}
          
         
           <Link to="/contact">Contact</Link>

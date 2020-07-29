@@ -3,15 +3,17 @@ import Footer from "./Footer";
 import Projects from "./Projects";
 import Icons from "./icons";
 import { ModalProvider, Modal } from "./modal";
+import Navs from './Navs'
 
-const Main = () => {
+const Main = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+  console.log(props)
   return (
     <div>
+      <Navs props={props}/>
       <div className="main-intro">
         <p className="intro">
-          Hi! I'm Carlos Venegas, a Front-end Developer currently studying in{" "}
+          Hi!<br/> I'm Carlos Venegas, a Front-end Developer currently studying in{" "}
           <br />
           San Francisco Ca. <br />
           Lets work together!
@@ -23,7 +25,7 @@ const Main = () => {
         </div>
       </div>
 
-      <ModalProvider>
+      {/* <ModalProvider>
         <p className="time-link">
           Time in <span
             style={{ textDecoration: "underline", cursor: "pointer" }}
@@ -34,7 +36,7 @@ const Main = () => {
           ...
         </p>
         {isModalOpen && <Modal onClose={() => setIsModalOpen(false)}></Modal>}
-      </ModalProvider>
+      </ModalProvider> */}
 
       <div className="main-body">
         <div className='main-proj-div'>

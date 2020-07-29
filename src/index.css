@@ -148,6 +148,7 @@ html {
   width: 80%;
   margin: auto;
   margin-top: 30px;
+  padding-left: 86px;
 }
 .main-intro .intro {
   font-size: 3.8rem;
@@ -181,7 +182,7 @@ html {
   -webkit-border-radius: 50%;
   height: 130px;
   width: 130px;
-  background: #1b4a3b5e;
+  background: #9e6868ab;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -220,26 +221,25 @@ html {
   width: 100%;
 }
 .main-footer .rights {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   padding: 90px 0;
 }
 .main-footer .connections {
   display: flex;
-  max-width: 60%;
-  padding: 30px 0;
+  max-width: 80%;
+  padding: 0px 100px 0 100px;
   margin: auto;
-  font-size: 1.6rem;
 }
 .main-footer .connections .icon-footer {
-  margin: 0 0 0 0;
+  margin: auto;
 }
 .main-footer .connections i {
-  font-size: 3rem;
+  font-size: 1.9rem;
   margin-bottom: 10px;
 }
 .main-footer .connections a {
   margin: 0 20px ;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 .main-footer .connections .fa-linkedin {
   color: #0077b5;
@@ -265,6 +265,8 @@ html {
   border: 2px solid black;
   max-width: 35%;
   margin: 20px 20px;
+  box-shadow: 0px 0px 20px 5px #7d6d6d;
+  border: none;
 }
 .project-main .projects .project-card h2 {
   font-size: 2.5rem;
@@ -505,4 +507,49 @@ html {
 .icon-container .expressjs p {
   font-size: 1.3rem;
   padding-top: 23px;
+}
+.form-section {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto 0px;
+}
+.form-section h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 3rem;
+}
+.form-section .form-input {
+  display: flex;
+  flex-direction: column;
+}
+.form-section .form-input label {
+  font-size: 1.6rem;
+  font-weight: 200;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.form-section .form-input input {
+  margin-bottom: 30px;
+  height: 45px;
+  font-size: 1.6rem;
+  font-family: "Work Sans", sans-serif;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #2f3234;
+  border-image: initial;
+  border-radius: 5px;
+  padding: 5px;
+  background: #f7f7f7;
+}
+.form-section .form-input textarea {
+  width: 100%;
+  font-size: 1.6rem;
+  background: #f7f7f7;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #2f3234;
+  border-image: initial;
+  padding: 5px;
+  border-radius: 5px;
 }
