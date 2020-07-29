@@ -26,6 +26,10 @@ const Contact = (props) => {
         <br />
         <label htmlFor="message" >Message</label>
         <textarea rows='12'></textarea>
+        <div>
+            <button type='submit'>Submit</button>
+            <button type='button'>Cancel</button>
+        </div>
       </form>
     </div>
     </>
