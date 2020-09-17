@@ -1,5 +1,4 @@
 import React from "react";
-// import logo from './images/'
 import "./App.css";
 import Routes from "./myRoutes/Routes";
 

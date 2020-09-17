@@ -32,10 +32,16 @@
         border-radius: 5px;
         padding: 5px;
         background: rgb(247, 247, 247);
+        border: none;
+        color: gray;
+        }
+        input:focus{
+            outline: none;
         }
         textarea {
             width: 100%;
         font-size: 1.6rem;
+        font-family: "Work Sans", sans-serif;
         background: rgb(247, 247, 247);
         border-width: 1px;
         border-style: solid;
@@ -43,6 +49,27 @@
         border-image: initial;
         padding: 5px;
         border-radius: 5px;
+        border: none;
+        color: gray;
+        }
+        textarea:focus{
+            outline: none;
+        }
+        button {
+            height: 30px;
+            width: 85px;
+            border: none;
+            margin: 20px;
+        }
+        button:hover {
+            opacity: 0.7;
+        }
+        button:active{
+            border: none;
+            transform:scale(0.9);
+        }
+        button:focus{
+            outline: none;
         }
     }
 
