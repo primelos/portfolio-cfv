@@ -26,13 +26,12 @@ const Projects = () => {
         <div className="project-card">
           <h2>Sanctions Explorer</h2>
 
-          
-            <img
-              className="img2"
-              src={require("../images/SE.png")}
-              alt="sanctions"
-            />
-          
+          <img
+            className="img2"
+            src={require("../images/SE.png")}
+            alt="sanctions"
+          />
+
           <div className="click-icon">
             <i className="fab fa-expeditedssl"></i>
 
@@ -70,7 +69,6 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <p>B</p>
     </div>
   );
 };
