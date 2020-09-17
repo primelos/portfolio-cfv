@@ -226,9 +226,9 @@ html {
 }
 .main-footer .connections {
   display: flex;
-  max-width: 80%;
-  padding: 0px 100px 0 100px;
+  max-width: 10%;
   margin: auto;
+  justify-content: center;
 }
 .main-footer .connections .icon-footer {
   margin: auto;
@@ -435,6 +435,15 @@ html {
 }
 .icon-container .awesome-icon .fa-yarn {
   color: #2c8ebb;
+}
+.icon-container .effect:hover {
+  opacity: 0.8;
+}
+.icon-container .effect:active {
+  transform: scale(0.9);
+}
+.icon-container .effect:focus {
+  outline: none;
 }
 .icon-container .css3 {
   width: 36px;

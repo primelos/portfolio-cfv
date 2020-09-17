@@ -5,22 +5,22 @@ const FooterConnections = props => {
     <div className="connections">
       <div className='icon-footer'>
         <i className="fab fa-github"></i>
-        <a href="https://github.com/primelos">Github</a>
+        <a href="https://github.com/primelos" target="_blank">Github</a>
       </div>
 
       <div className='icon-footer'>
         <i className="fab fa-linkedin"></i>
-        <a href="https://www.linkedin.com/in/carlos-venegas-75982432/">
+        <a href="https://www.linkedin.com/in/carlos-venegas-75982432/" target="_blank">
           LinkedIn
         </a>
       </div>
       <div className='icon-footer'>
         <i className="fab fa-twitter"></i>
-        <a href="https://twitter.com/primelos">Twitter</a>
+        <a href="https://twitter.com/primelos" target="_blank">Twitter</a>
       </div>
       <div className='icon-footer'>
         <i className="fab fa-facebook"></i>
-        <a href="https://www.facebook.com/carlos.f.venegas1">Facebook</a>
+        <a href="https://www.facebook.com/carlos.f.venegas1" target="_blank">Facebook</a>
       </div>
     </div>
   );
