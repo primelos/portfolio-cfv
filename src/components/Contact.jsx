@@ -19,7 +19,7 @@ const Contact = (props) => {
           method="POST"
         >
           <label htmlFor="name">Name</label>
-          <input type="text" placeholder="Ex. John Doe" name="name" />
+          <input type="text" name="name" />
           <br />
           <label htmlFor="email">Email</label>
           <input type="text" name="email" />
