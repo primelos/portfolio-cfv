@@ -29,7 +29,7 @@ const Contact = (props) => {
           <br />
           <label htmlFor="message">Message</label>
           <textarea rows="12"></textarea>
-          <div>
+          <div className='button-width'>
             <button type="submit">Submit</button>
             <button type="button" onClick={goBack}>Cancel</button>
           </div>
