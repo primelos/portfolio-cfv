@@ -6,7 +6,7 @@ import Navs from './Navs'
 
 const Main = (props) => {
   
-  
+
   return (
     <div>
       <Navs props={props}/>
@@ -20,7 +20,7 @@ const Main = (props) => {
         </p>
 
         <div>
-          <img src={require("../images/gitPic.jpg")} alt="me" />
+          <img src={require("../images/gitPic.jpg")} alt="carlos venegas" />
         </div>
       </div>
 
