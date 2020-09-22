@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Navs = (props) => {
-  console.log(props);
   return (
     <div className="nav-body">
       <div>
@@ -15,14 +14,12 @@ const Navs = (props) => {
         </Link>
       </div>
       <div>
-        <nav>
-          {console.log(`test`, props)}
-
-           
-          < a href="#projects-link">Projects</ a> 
-          {/* <Link exact to="/">
-            Projects
-          </Link>  */}
+        <nav>       
+          {props.history.location.pathname === '/' ? (
+            <a href="#projects-link">Projects</a>
+          ) : (
+            <Link to="/">Projects</Link>
+          )}
           <Link to="/contact">Contact</Link>
         </nav>
       </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Footer from "./Footer";
 import Projects from "./Projects";
 import Icons from "./icons";
@@ -9,7 +9,7 @@ const Main = (props) => {
 
   return (
     <div>
-      <Navs props={props}/>
+      <Navs history={props.history}/>
       <div className="main-intro">
         <p className="intro">
           Hi!<br/> I'm Carlos Venegas, a Front-end Developer currently studying in{" "}

@@ -2,7 +2,8 @@ import React from "react";
 import "./App.css";
 import Routes from "./myRoutes/Routes";
 
-function App() {
+function App(props) {
+  
   return (
     <div className="App">
       <Routes />
