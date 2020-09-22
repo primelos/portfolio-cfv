@@ -2,7 +2,6 @@ import React from "react";
 import Navs from "./Navs";
 
 const Contact = (props) => {
-  console.log(props);
 
   const goBack = () => {
     props.history.push('/')
@@ -10,7 +9,7 @@ const Contact = (props) => {
 
   return (
     <>
-      <Navs props={props} />
+      <Navs history={props.history} />
       <div className="form-section">
         <h2>Professional Inquires</h2>
         <form
