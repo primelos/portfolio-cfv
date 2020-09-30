@@ -8,7 +8,8 @@ html{
     background: -webkit-radial-gradient(circle, rgba(238,204,174,1) 0%, rgba(167,166,165,1) 100%);
     background: radial-gradient(circle, rgba(238,204,174,1) 0%, rgba(167,166,165,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeccae",endColorstr="#a7a6a5",GradientType=1);
-}
+    scroll-behavior: smooth;
+  }
 .dark-mode {
     color: #fff;
     background-color: #313843;
@@ -48,4 +49,36 @@ html{
     margin: 0 auto;
     padding-top: 100px;
     
+}
+.hide {
+  font-size: 2rem;
+  color: #f5f5f5;
+  position: fixed;
+  right: 9rem;
+  bottom: 4rem;
+  z-index: -100;
+  background: #c1bebe;
+  width: 3rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+  animation: bounce 2s ease-in-out infinite;
+  border-radius: 20%;
+  text-decoration: none;
+  visibility: hidden;
+  box-shadow: 5px 10px 18px #888888;}
+.show-arrow{
+  visibility: visible;
+  z-index: 100;
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

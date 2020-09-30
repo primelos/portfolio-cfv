@@ -6,9 +6,25 @@ import Navs from './Navs'
 
 const Main = (props) => {
   
+  function backUp(){
+    window.addEventListener('scroll', () => {
+      let scrollHeight = window.pageYOffset
+      let nav = document.querySelector('.nav-body')
+      let navHeight = nav.getBoundingClientRect().height
+      let topLink = document.querySelector('.hide')
+      if(scrollHeight > navHeight){
+          topLink.classList.add('show-arrow')
+      } else {
+        topLink.classList.remove('show-arrow')
+
+      }
+      
+    })
+  }
+  backUp()
 
   return (
-    <div>
+    <div id='home' >
       <Navs history={props.history}/>
       <div className="main-intro">
         <p className="intro">
@@ -31,6 +47,9 @@ const Main = (props) => {
       </div>
       <Icons />
       <Footer />
+      <a href='#home' className='hide'>
+        <i className="fas fa-arrow-up"></i>
+      </a>
     </div>
   );
 };
