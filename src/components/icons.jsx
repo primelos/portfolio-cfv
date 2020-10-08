@@ -1,9 +1,14 @@
 import React from "react";
+import Zoom from 'react-reveal/Zoom';
+import Slide from 'react-reveal/Slide';
 
 const Icons = () => {
   return (
     <div className="icon-container">
+      <Slide top>
         <h2>Worked with...</h2>
+        </Slide>
+        <Zoom top>
       <div className="awesome-icon effect">
         <div className="">
           <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank" rel="noopener noreferrer">
@@ -104,6 +109,7 @@ const Icons = () => {
         </a>
         <p>Python</p>
       </div>
+      </Zoom>
     </div>
   );
 };
