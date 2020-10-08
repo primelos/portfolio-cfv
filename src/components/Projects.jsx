@@ -1,8 +1,11 @@
 import React from "react";
+import Fade from 'react-reveal/Fade';
+
 
 const Projects = () => {
   return (
     <div className="project-main">
+      <Fade bottom >
       <div className="projects" id="projects-link">
       <div className="project-card">
           <h2>Game of Life</h2>
@@ -34,7 +37,6 @@ const Projects = () => {
             </a>
           </div>
         </div>
-        
 
         <div className="project-card">
           <h2>Rick & Morty</h2>
@@ -68,7 +70,6 @@ const Projects = () => {
             </a>
           </div>
         </div>
-
         <div className="project-card">
           <h2>Snake Game</h2>
           <a
@@ -145,6 +146,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
+        </Fade>
     </div>
   );
 };

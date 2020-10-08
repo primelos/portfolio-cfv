@@ -1,6 +1,7 @@
 import React from "react";
 import Navs from "./Navs";
 
+
 const Contact = (props) => {
 
   const goBack = () => {

@@ -14,4 +14,4 @@ function App(props) {
 
 export default App;
 
-//less-watch-compiler less src index.less
+// less-watch-compiler less src index.less
