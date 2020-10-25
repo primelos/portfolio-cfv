@@ -15,7 +15,7 @@ const Projects = () => {
             >
               <img
                 className="img3"
-                src={require("../images/gamelife.png")}
+                src={require("../images/gamelife.png").default}
                 alt="game of life"
               />
             </a>
@@ -47,7 +47,7 @@ const Projects = () => {
             >
               <img
                 className="img3"
-                src={require("../images/ricknmorty.png")}
+                src={require("../images/ricknmorty.png").default}
                 alt="ricky and morty"
               />
             </a>
@@ -78,7 +78,7 @@ const Projects = () => {
             >
               <img
                 className="img3"
-                src={require("../images/snake.png")}
+                src={require("../images/snake.png").default}
                 alt="snake game"
               />
             </a>
@@ -108,7 +108,7 @@ const Projects = () => {
             >
               <img
                 className="img1"
-                src={require("../images/car.png")}
+                src={require("../images/car.png").default}
                 alt="mustang"
               />
             </a>
@@ -134,7 +134,7 @@ const Projects = () => {
 
             <img
               className="img2"
-              src={require("../images/SE.png")}
+              src={require("../images/SE.png").default}
               alt="sanctions"
             />
 

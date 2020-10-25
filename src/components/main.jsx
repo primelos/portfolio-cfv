@@ -41,7 +41,7 @@ const Main = (props) => {
         </p>
 
         <div>
-          <img src={require("../images/gitPic.jpg")} alt="carlos venegas" />
+          <img src={require("..//images/gitPic.jpg").default} alt="carlos-venegas" />
         </div>
       </div>
       </Fade>
