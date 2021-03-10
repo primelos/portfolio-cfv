@@ -33,7 +33,7 @@ const Main = (props) => {
       <Navs history={props.history}/>
       <div className="main-intro">
         <p className="intro">
-          Hi!<br/> I'm Carlos Venegas, a soft engineer currently studying in
+          Hi!<br/> I'm Carlos Venegas, a software engineer currently studying in
           <br />
           San Francisco Ca. <br />
           Lets work together!
