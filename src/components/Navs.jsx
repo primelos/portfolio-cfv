@@ -13,16 +13,24 @@ const Navs = (props) => {
           </div>
         </Link>
       </div>
-      <div>
-        <nav>       
-          {props.history.location.pathname === '/' ? (
+
+      <nav>
+        {props.history.location.pathname === "/" ? (
+          <div>
             <a href="#projects-link">Projects</a>
-          ) : (
-            <Link to="/">Projects</Link>
-          )}
+          </div>
+        ) : (
+          <Link to="/">Projects</Link>
+        )}
+        <div className="plus-icon">
+          <a href="#other-projects">
+            <i class="fas fa-plus"></i>
+          </a>
+        </div>
+        <div>
           <Link to="/contact">Contact</Link>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
   );
 };

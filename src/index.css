@@ -133,7 +133,7 @@ html {
   font-size: 62.5%;
   max-width: 85%;
   margin: auto;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   background: #eeccae;
   background: -moz-radial-gradient(circle, #eeccae 0%, #a7a6a5 100%);
   background: -webkit-radial-gradient(circle, #eeccae 0%, #a7a6a5 100%);
@@ -146,7 +146,7 @@ html {
   background-color: #313843;
 }
 .dark-mode .navbar {
-  background-color: #1F2022;
+  background-color: #1f2022;
   border: none;
 }
 .main-intro {
@@ -247,15 +247,25 @@ html {
 }
 .nav-body a {
   text-decoration: none;
-  margin: 0 20px;
+  font-weight: 900;
   color: black;
 }
 .nav-body a:hover {
   color: gray;
 }
 .nav-body nav {
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  padding-right: 30px;
   font-size: 2.5rem;
+  width: 100%;
+}
+.nav-body nav .plus-icon {
+  width: 8%;
+}
+.nav-body nav div {
+  width: 17%;
 }
 .main-footer {
   padding-top: 100px;
@@ -307,7 +317,8 @@ html {
   max-width: 26%;
   padding: 0 10px;
   margin: 20px 20px;
-  box-shadow: 0px 0px 20px 5px #7d6d6d;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   border: none;
   border-radius: 5%;
   transform: scale(1);
@@ -352,7 +363,6 @@ html {
   justify-content: space-evenly;
   width: 60%;
   margin: auto;
-  padding-top: 80px;
 }
 .icon-container h2 {
   font-size: 2.8rem;
@@ -556,4 +566,126 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.work-container .other-title {
+  display: flex;
+  font-size: 2.5rem;
+  width: 19%;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  flex: 1;
+}
+.work-container .other-title span {
+  color: #000000;
+  font-size: 2.2rem;
+  letter-spacing: 1.42px;
+  line-height: 1.08;
+  padding: 2px 0px;
+  white-space: nowrap;
+  position: relative;
+  width: 20px;
+}
+.work-container .other-title span:before {
+  background: #f9f9f9;
+  border-radius: 0px 0px 4px 4px;
+  bottom: -6px;
+  content: "";
+  height: 4px;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  right: 0px;
+  transform-origin: left center;
+  transform: scaleX(0);
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  visibility: hidden;
+  width: auto;
+}
+.work-container .other-title:hover span:before {
+  transform: scaleX(1);
+  visibility: visible;
+  opacity: 1 !important;
+}
+.work-container .fa-level-down-alt {
+  font-size: 1.5rem;
+  vertical-align: sub;
+  animation: bounce 2s ease-in-out infinite !important;
+  transition: 0.2s !important;
+  transition-timing-function: ease-in !important;
+}
+.work-container .fas {
+  width: 20px;
+}
+.work-container .fas:hover {
+  color: gray;
+  cursor: pointer;
+}
+.work-container .row-one {
+  display: flex !important;
+  width: 100% !important;
+}
+.work-container .row-one .image-container {
+  position: relative !important;
+  overflow: hidden !important;
+  border-radius: 4px !important;
+  max-height: 90% !important;
+  max-width: 90% !important;
+  margin: 0 10px !important;
+  margin-bottom: 5px !important;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s !important;
+  display: flex !important;
+  justify-content: center !important;
+  border: 2px solid #7a7a7a !important;
+}
+.work-container .row-one .image-container:hover {
+  border: 1px solid #c0c0c0 !important;
+}
+.work-container .row-one .image-container img {
+  inset: 0px !important;
+  float: left !important;
+  display: block !important;
+  width: 400px !important;
+  height: 300px !important;
+  transition: ease-in-out 0.5s !important;
+}
+.work-container .row-one .image-container img:hover {
+  box-shadow: rgb(0 0 0%) 0px 40px 58px -16px, rgb(0 0 0%) 0px 30px 22px -10px !important;
+  transform: scale(1.05) !important;
+  border-color: rgba(249, 249, 249, 0.8) !important;
+}
+.work-container .row-one .image-container .click-icon {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5rem;
+  max-width: 50%;
+  margin: auto;
+  justify-content: space-evenly;
+  top: 15px;
+  right: -18px;
+  width: 106px;
+}
+.work-container .row-one .image-container .click-icon a {
+  animation: color-change 2s infinite;
+}
+@keyframes color-change {
+  1% {
+    color: #979696;
+  }
+  25% {
+    color: #5a5959;
+  }
+  50% {
+    color: #2b2a2a;
+  }
+  75% {
+    color: #5a5959;
+  }
+  100% {
+    color: #979696;
+  }
+}
+.work-container .row-one .image-container .click-icon .fa-laptop {
+  padding-bottom: 10px;
 }
