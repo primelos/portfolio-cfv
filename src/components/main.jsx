@@ -10,21 +10,17 @@ import Spin from "react-reveal/Spin";
 import TransitionGroup from "react-transition-group/TransitionGroup";
 
 const Main = (props) => {
-  // console.log(props);
   const [open, setOpen] = useState(false);
 
-  const handleClick = (e) => {
-    console.log(e);
+  const handleClick = () => {
     setOpen((x) => (x = !open));
   };
 
   function backUp() {
     window.addEventListener("scroll", () => {
       let scrollHeight = window.pageYOffset;
-      console.log("s", scrollHeight);
       let nav = document.querySelector(".nav-body");
       let navHeight = nav.getBoundingClientRect().height;
-      console.log("n", navHeight);
 
       let topLink = document.querySelector(".hide");
       if (props.history.location.pathname === "/") {
