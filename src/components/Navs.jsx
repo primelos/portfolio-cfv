@@ -20,7 +20,9 @@ const Navs = (props) => {
             <a href="#projects-link">Projects</a>
           </div>
         ) : (
-          <Link to="/">Projects</Link>
+          <div>
+            <Link to="/">Projects</Link>
+          </div>
         )}
         <div className="plus-icon">
           <a href="#other-projects">
