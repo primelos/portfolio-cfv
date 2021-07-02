@@ -80,17 +80,20 @@ const Main = (props) => {
                 <Fade>
                   <div className="row-one">
                     <div className="image-container">
-                      <img src={require("../img/lotto.png").default} alt="" />
+                      <img
+                        src={require("../img/pintrest.png").default}
+                        alt=""
+                      />
                       <div className="click-icon">
                         <a
-                          href="https://my-lotto.vercel.app/"
+                          href="https://pintrest-clone.vercel.app/"
                           rel="noopener noreferrer"
                           target="_blank"
                         >
                           <i className="fas fa-laptop"></i>
                         </a>
                         <a
-                          href="https://github.com/primelos/my-lotto"
+                          href="https://github.com/primelos/pintrest-clone"
                           rel="noopener noreferrer"
                           target="_blank"
                         >
@@ -98,6 +101,7 @@ const Main = (props) => {
                         </a>
                       </div>
                     </div>
+
                     <div className="image-container">
                       <img src={require("../img/gdrive.png").default} alt="" />
                       <div className="click-icon">
@@ -178,27 +182,15 @@ const Main = (props) => {
                         </a>
                       </div>
                     </div>
-
                     <div className="image-container">
                       <img
-                        src={require("../img/pintrest.png").default}
-                        alt=""
+                        src={require("../images/SE.png").default}
+                        alt="sanctions"
                       />
                       <div className="click-icon">
-                        <a
-                          href="https://pintrest-clone.vercel.app/"
-                          rel="noopener noreferrer"
-                          target="_blank"
-                        >
-                          <i className="fas fa-laptop"></i>
-                        </a>
-                        <a
-                          href="https://github.com/primelos/pintrest-clone"
-                          rel="noopener noreferrer"
-                          target="_blank"
-                        >
-                          <i className="fas fa-laptop-code"></i>
-                        </a>
+                        <i className="fab fa-expeditedssl"></i>
+
+                        <i className="fab fa-expeditedssl"></i>
                       </div>
                     </div>
                   </div>

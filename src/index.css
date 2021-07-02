@@ -598,12 +598,15 @@ html {
   transition: 0.2s !important;
   transition-timing-function: ease-in !important;
 }
-.work-container .fas {
+.work-container .fas .fab {
   width: 20px;
 }
-.work-container .fas:hover {
+.work-container .fas .fab:hover {
   color: gray;
   cursor: pointer;
+}
+.work-container .fab {
+  padding-bottom: 5px;
 }
 .work-container .row-one {
   display: flex;

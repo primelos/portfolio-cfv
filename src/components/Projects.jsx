@@ -130,18 +130,29 @@ const Projects = () => {
             </div>
           </div>
           <div className="project-card">
-            <h2>Sanctions Explorer</h2>
+            <h2>Lottery Numbers</h2>
 
             <img
               className="img2"
-              src={require("../images/SE.png").default}
-              alt="sanctions"
+              src={require("../img/lotto.png").default}
+              alt="lotto random"
             />
 
             <div className="click-icon">
-              <i className="fab fa-expeditedssl"></i>
-
-              <i className="fab fa-expeditedssl"></i>
+              <a
+                href="https://my-lotto.vercel.app/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <i className="fas fa-laptop"></i>
+              </a>
+              <a
+                href="https://github.com/primelos/my-lotto"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <i className="fas fa-laptop-code"></i>
+              </a>
             </div>
           </div>
         </div>
