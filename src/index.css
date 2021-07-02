@@ -223,6 +223,11 @@ html {
     height: 198px;
     border-radius: 50%;
   }
+  .hide {
+    width: 2.5rem;
+    height: 2.5rem;
+    right: 2rem;
+  }
 }
 .nav-body {
   display: flex;
