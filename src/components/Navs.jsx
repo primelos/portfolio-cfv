@@ -27,11 +27,15 @@ const Navs = (props) => {
         <div>
           <Link to="/contact">Contact</Link>
         </div>
-        <div className="plus-icon">
-          <a href="#other-projects">
-            <i className="fas fa-layer-group"></i>
-          </a>
-        </div>
+        {props.history.location.pathname === "/contact" ? (
+          ""
+        ) : (
+          <div className="plus-icon">
+            <a href="#other-projects">
+              <i className="fas fa-layer-group"></i>
+            </a>
+          </div>
+        )}
       </nav>
     </div>
   );
