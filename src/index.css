@@ -274,12 +274,13 @@ html {
   padding-right: 30px;
   font-size: 2.5rem;
   width: 100%;
+  flex: 1;
 }
 .nav-body nav .plus-icon {
   width: 8%;
 }
 .nav-body nav div {
-  width: 17%;
+  padding-right: 5px;
 }
 @media screen and (max-width: 400px) {
   .nav-body nav {
