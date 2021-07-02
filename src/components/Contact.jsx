@@ -1,12 +1,10 @@
 import React from "react";
 import Navs from "./Navs";
 
-
 const Contact = (props) => {
-
   const goBack = () => {
-    props.history.push('/')
-  }
+    props.history.push("/");
+  };
 
   return (
     <>
@@ -29,9 +27,11 @@ const Contact = (props) => {
           <br />
           <label htmlFor="message">Message</label>
           <textarea rows="12"></textarea>
-          <div className='button-width'>
+          <div className="button-width">
             <button type="submit">Submit</button>
-            <button type="button" onClick={goBack}>Cancel</button>
+            <button type="button" onClick={goBack}>
+              Cancel
+            </button>
           </div>
         </form>
       </div>
