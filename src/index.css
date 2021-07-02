@@ -282,7 +282,7 @@ html {
 .nav-body nav div {
   padding-right: 5px;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
   .nav-body nav {
     flex-direction: column;
     text-align: start;
@@ -383,7 +383,7 @@ html {
   max-width: 50%;
   margin: auto;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
   .projects {
     width: 100%;
   }
@@ -490,6 +490,11 @@ html {
   width: 100% !important;
   height: auto !important;
   padding-bottom: 18px;
+}
+@media screen and (max-width: 480px) {
+  .icon-container {
+    width: 100% !important;
+  }
 }
 .form-section {
   width: 100%;
@@ -663,10 +668,13 @@ html {
 .work-container .row-one .image-container .click-icon .fa-laptop {
   padding-bottom: 10px;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
   .other-title {
     justify-content: center;
     align-items: center;
     width: 45% !important;
+  }
+  .row-one {
+    flex-direction: column;
   }
 }
