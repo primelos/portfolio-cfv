@@ -210,6 +210,20 @@ html {
     transform: scale(1);
   }
 }
+@media screen and (max-width: 400px) {
+  .main-intro {
+    flex-direction: column-reverse;
+    padding-left: 0;
+  }
+  .main-intro .intro {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+  .main-intro img {
+    height: 198px;
+    border-radius: 50%;
+  }
+}
 .nav-body {
   display: flex;
   flex-direction: row;
@@ -267,6 +281,18 @@ html {
 .nav-body nav div {
   width: 17%;
 }
+@media screen and (max-width: 400px) {
+  .nav-body nav {
+    flex-direction: column;
+    text-align: start;
+    padding-right: 0;
+    padding-left: 40px;
+  }
+  .nav-body nav div {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+}
 .main-footer {
   padding-top: 100px;
   width: 100%;
@@ -314,7 +340,7 @@ html {
 }
 .project-main .projects .project-card {
   border: 2px solid black;
-  max-width: 26%;
+  width: 26%;
   padding: 0 10px;
   margin: 20px 20px;
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -356,6 +382,14 @@ html {
   max-width: 50%;
   margin: auto;
 }
+@media screen and (max-width: 400px) {
+  .projects {
+    width: 100%;
+  }
+  .projects .project-card {
+    width: 100% !important;
+  }
+}
 .icon-container {
   display: flex;
   flex-wrap: wrap;
@@ -368,13 +402,9 @@ html {
   font-size: 2.8rem;
   font-weight: bold;
 }
-.icon-container .icon-description {
-  color: red;
-  margin: 10px 30px;
-}
 .icon-container .awesome-icon {
   font-size: 5rem;
-  width: 10%;
+  width: 14%;
   margin: 40px 30px;
 }
 .icon-container .awesome-icon p {
@@ -407,6 +437,13 @@ html {
 .icon-container .awesome-icon .fa-yarn {
   color: #2c8ebb;
 }
+.icon-container .effect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 30px;
+}
 .icon-container .effect:hover {
   opacity: 0.8;
 }
@@ -423,75 +460,41 @@ html {
 .icon-container .css3 p {
   font-size: 1.3rem;
 }
-.icon-container .sqlite {
-  width: 39px;
-  margin: 40px 30px;
+.icon-container .effect {
+  width: 75px;
+  height: 75px;
 }
-.icon-container .sqlite p {
+.icon-container .effect p {
   font-size: 1.3rem;
   padding-top: 6px;
 }
-.icon-container .postman {
-  width: 40px;
-  margin: 43px 30px;
+.icon-container .effect a img {
+  width: auto;
+  height: 40px;
+  line-height: 0;
 }
-.icon-container .postman img {
-  margin-left: 6px;
+.icon-container .css3 img {
+  height: 51px !important;
 }
-.icon-container .postman p {
-  padding-top: 7px;
-  font-size: 1.3rem;
-}
-.icon-container .python {
-  width: 40px;
-  margin: 44px 30px;
-}
-.icon-container .python img {
-  margin-left: 6px;
-}
-.icon-container .python p {
-  padding-top: 6px;
-  font-size: 1.3rem;
-}
-.icon-container .jest {
-  width: 36px;
-  margin: 40px 30px;
-}
-.icon-container .jest p {
-  padding-top: 10px;
-  font-size: 1.3rem;
-}
-.icon-container .redux {
-  width: 39px;
-  margin: 40px 30px;
+.icon-container .redux a {
+  font-size: 4rem;
 }
 .icon-container .redux p {
-  font-size: 1.3rem;
-  padding-top: 3px;
+  padding-top: 10px !important;
 }
-.icon-container .redux img {
-  margin-left: 3px;
+.icon-container .axios img {
+  width: 100% !important;
 }
-.icon-container .axios {
-  margin: 45px 30px;
-  width: 73px;
-}
-.icon-container .axios p {
-  font-size: 1.3rem;
-  padding-top: 15px;
-}
-.icon-container .expressjs {
-  margin: 43px 30px;
-  width: 76px;
-}
-.icon-container .expressjs p {
-  font-size: 1.3rem;
-  padding-top: 23px;
+.icon-container .expressjs img {
+  width: 100% !important;
+  height: auto !important;
+  padding-bottom: 18px;
 }
 .form-section {
   width: 100%;
   max-width: 600px;
   margin: 50px auto 0px;
+  padding-bottom: 100px;
 }
 .form-section h2 {
   width: 100%;
@@ -575,37 +578,7 @@ html {
   margin-top: 25px;
   margin-bottom: 25px;
   flex: 1;
-}
-.work-container .other-title span {
-  color: #000000;
-  font-size: 2.2rem;
-  letter-spacing: 1.42px;
-  line-height: 1.08;
-  padding: 2px 0px;
-  white-space: nowrap;
-  position: relative;
-  width: 20px;
-}
-.work-container .other-title span:before {
-  background: #f9f9f9;
-  border-radius: 0px 0px 4px 4px;
-  bottom: -6px;
-  content: "";
-  height: 4px;
-  left: 0px;
-  opacity: 0;
-  position: absolute;
-  right: 0px;
-  transform-origin: left center;
-  transform: scaleX(0);
-  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
-  visibility: hidden;
-  width: auto;
-}
-.work-container .other-title:hover span:before {
-  transform: scaleX(1);
-  visibility: visible;
-  opacity: 1 !important;
+  align-items: center;
 }
 .work-container .fa-level-down-alt {
   font-size: 1.5rem;
@@ -688,4 +661,11 @@ html {
 }
 .work-container .row-one .image-container .click-icon .fa-laptop {
   padding-bottom: 10px;
+}
+@media screen and (max-width: 400px) {
+  .other-title {
+    justify-content: center;
+    align-items: center;
+    width: 45% !important;
+  }
 }

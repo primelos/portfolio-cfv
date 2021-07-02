@@ -94,3 +94,19 @@ html {
     transform: scale(1);
   }
 }
+
+@media screen and (max-width: 400px) {
+  .main-intro {
+    flex-direction: column-reverse;
+    padding-left: 0;
+
+    .intro {
+      font-size: 1.8rem;
+      line-height: 1.4;
+    }
+    img {
+      height: 198px;
+      border-radius: 50%;
+    }
+  }
+}
