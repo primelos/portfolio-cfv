@@ -120,7 +120,11 @@ const Main = (props) => {
                     <div className="image-container">
                       <img src={require("../img/crown.png").default} alt="" />
                       <div className="click-icon">
-                        <a href="" rel="noopener noreferrer" target="_blank">
+                        <a
+                          href="https://carlosfvenegas.com/"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
                           <i className="fab fa-expeditedssl"></i>
                         </a>
                         <a
