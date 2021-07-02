@@ -66,7 +66,7 @@
     transition: 0.2s !important;
     transition-timing-function: ease-in !important;
   }
-  .fas {
+  .fas .fab {
     width: 20px;
 
     &:hover {
@@ -74,10 +74,12 @@
       cursor: pointer;
     }
   }
+  .fab {
+    padding-bottom: 5px;
+  }
   .row-one {
     display: flex;
     width: 100%;
-    // height: 80%;
 
     .image-container {
       position: relative;
@@ -99,8 +101,8 @@
         inset: 0px;
         float: left;
         display: block;
-        width: 400px;
-        height: 300px;
+        width: 100%;
+        height: 100%;
         transition: ease-in-out 0.5s;
 
         &:hover {
