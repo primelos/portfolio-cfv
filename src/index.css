@@ -591,6 +591,11 @@ html {
   flex: 1;
   align-items: center;
 }
+.work-container .other-title i {
+  cursor: pointer;
+  width: 15%;
+  font-size: 2rem;
+}
 .work-container .fa-level-down-alt {
   font-size: 1.5rem;
   vertical-align: sub;
