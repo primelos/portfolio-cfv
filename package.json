@@ -5,6 +5,8 @@
   "dependencies": {
     "@cloudinary/base": "^1.0.0-beta.4",
     "@cloudinary/react": "^1.0.0-beta.8",
+    "@formspree/cli": "^0.9.6",
+    "@formspree/react": "^2.2.4",
     "axios": "^0.21.1",
     "bootstrap": "5.1.0",
     "formik": "^2.2.1",
@@ -25,6 +27,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "formspree": "formspree deploy",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

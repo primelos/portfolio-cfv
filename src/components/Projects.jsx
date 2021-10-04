@@ -131,12 +131,17 @@ const Projects = () => {
           </div>
           <div className="project-card">
             <h2>Lottery Numbers</h2>
-
-            <img
-              className="img2"
-              src={require("../img/lotto.png").default}
-              alt="lotto random"
-            />
+            <a
+              href="https://my-lotto.vercel.app/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                className="img2"
+                src={require("../img/lotto.png").default}
+                alt="lotto random"
+              />
+            </a>
 
             <div className="click-icon">
               <a
