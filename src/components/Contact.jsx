@@ -16,7 +16,7 @@ const Contact = (props) => {
       <Navs history={props.history} />
       <div className="form-section">
         <h2>Professional Inquires</h2>
-        <form onSubmit={handleSubmit}>
+        <form className="form-input" onSubmit={handleSubmit}>
           <label htmlFor="name">Name </label>
           <input type="text" name="name" />
 
@@ -26,10 +26,9 @@ const Contact = (props) => {
           <ValidationError field="email" prefix="Email" errors={errors} />
 
           <br />
-          <label htmlFor="subject">
-            Subject
-            <input type="text" name="subject" />
-          </label>
+          <label htmlFor="subject">Subject</label>
+          <input type="text" name="subject" />
+
           <br />
           <label htmlFor="message">
             Message
